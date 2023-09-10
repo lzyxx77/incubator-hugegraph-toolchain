@@ -67,7 +67,7 @@ jobs:
 
       - name: HugeGraph-loader.sh test
         run: |
-          cd assembly/static && ls
+          mvn clean package -DskipTests
           bash bin/hugegraph-loader.sh -f ./example/file/struct.json -s ./example/file/schema.groovy \
             -g hugegraph || exit
 
