@@ -67,7 +67,7 @@ jobs:
 
       - name: HugeGraph-loader.sh test
         run: |
-          mvn clean package -DskipTests -pl hugegraph-loader
+          cd apache-hugegraph-loader-incubating-1.0.0
           bash bin/hugegraph-loader.sh -f ./example/file/struct.json -s ./example/file/schema.groovy \
             -g hugegraph || exit
 
