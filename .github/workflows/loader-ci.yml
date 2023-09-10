@@ -65,6 +65,12 @@ jobs:
           mvn test -P hdfs
           mvn test -P jdbc
 
+      - name: HugeGrapg-loader.sh test
+        run: |
+          bash bin/hugegraph-loader.sh -f ./example/file/struct.json -s ./example/file/schema.groovy \
+            -g hugegraph || exit
+
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.0.0
         with:
