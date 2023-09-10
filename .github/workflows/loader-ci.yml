@@ -20,7 +20,7 @@ on:
 
 jobs:
   loader-ci:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       TRAVIS_DIR: hugegraph-loader/assembly/travis
       STATIC_DIR: hugegraph-loader/assembly/static
