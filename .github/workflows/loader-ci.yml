@@ -67,6 +67,7 @@ jobs:
 
       - name: HugeGrapg-loader.sh test
         run: |
+          cd assembly/static/
           bash bin/hugegraph-loader.sh -f ./example/file/struct.json -s ./example/file/schema.groovy \
             -g hugegraph || exit
 
