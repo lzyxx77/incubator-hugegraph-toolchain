@@ -68,7 +68,7 @@ jobs:
       - name: HugeGraph-loader.sh test
         run: |
           cd hugegraph-loader/apache-hugegraph-loader-incubating-1.0.0
-          sh bin/hugegraph-loader.sh -g hugegraph -f example/file/struct.json -s example/file/schema.groovy || exit
+          bash bin/hugegraph-loader.sh -g hugegraph -f example/file/struct.json -s example/file/schema.groovy || exit
 
 
       - name: Upload coverage to Codecov
